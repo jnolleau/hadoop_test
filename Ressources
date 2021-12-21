@@ -1,0 +1,11 @@
+# Créer un répertoire dans HDFS, appelé input
+hadoop fs -mkdir -p input
+
+# Charger le fichier purchases dans le répertoire input
+hadoop fs -put purchases.txt input
+
+# Pour afficher le contenu du répertoire input
+hadoop fs -ls input
+
+# Afficher les dernières lignes du fichier purchases
+hadoop fs -tail input/purchases.txt
